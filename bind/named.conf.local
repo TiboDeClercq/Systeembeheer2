@@ -1,0 +1,23 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+zone "tibo-declercq.sb.uclllabs.be"{
+	type master;
+	notify yes;
+	allow-update{ none;};
+	file "/etc/bind/db.tibo-declercq.sb.uclllabs.be";
+	allow-transfer{
+		193.191.176.252;
+		//ns2
+		193.191.177.4;
+	//	2001:6a8:2880:a020::fe;
+	//	2001:6a8:2880:a021::4;			
+		//mrt 
+		193.191.177.254;
+		193.191.177.204;
+	};
+};
