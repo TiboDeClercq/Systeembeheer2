@@ -9,7 +9,7 @@ zone "tibo-declercq.sb.uclllabs.be"{
 	type master;
 	notify yes;
 	allow-update{ none;};
-	file "/etc/bind/db.tibo-declercq.sb.uclllabs.be";
+	file "/etc/bind/db.tibo-declercq.sb.uclllabs.be.signed";
 	allow-transfer{
 		193.191.176.252;
 		//ns2

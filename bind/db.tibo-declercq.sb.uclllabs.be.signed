@@ -1,0 +1,422 @@
+; File written on Fri Oct  2 13:34:26 2020
+; dnssec_signzone version 9.16.1-Ubuntu
+tibo-declercq.sb.uclllabs.be. 300 IN SOA tibo-declercq.sb.uclllabs.be. root.tibo-declercq.sb.uclllabs.be. (
+					901        ; serial
+					300        ; refresh (5 minutes)
+					300        ; retry (5 minutes)
+					300        ; expire (5 minutes)
+					300        ; minimum (5 minutes)
+					)
+			300	RRSIG	SOA 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					AJLqoMCv2Z2mXizAyrRUjefcVYoqVe+Ipo3q
+					rUemobIbFJpn1dxudWGWpWoaO5dkMaljhdc2
+					aiKW3Rbxrj4cfmcbWj4bpYWk3+LBDzqn26rT
+					7+ein6Kcy7XAdPvJgB6Bd0qvaPY8AuvtnCtx
+					uOTRaC6Yz2v0SXnv4y6IOXLOxefwFjliAj9g
+					x3xEVeK49k8jLmp1bpkeayT7ox91ogExnm3u
+					43bcELnZ3FcskgqEwe8suKw8D0mdC5o2bkjH
+					IBtyvIxkCaet/FCEo34sV/UksWbnXCa+fFK6
+					MrXocupxQx7BHf3PSdepUXBUaEFqSEBwp5MU
+					axYtLYIRdywzHfIX9Q== )
+			300	NS	ns.tibo-declercq.sb.uclllabs.be.
+			300	NS	ns1.uclllabs.be.
+			300	NS	ns2.uclllabs.be.
+			300	RRSIG	NS 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					ZZWBvXQQLieCTw/9sOE3fOACOCNdJOi3YjX+
+					cV+Z2UX6qDwM5tQVz4FRc+AyhnQEs9ZEUSKt
+					bhzMECDaI7QYcrFjeGRjq2VznVHkLeVNql60
+					srsPIeFd1xZMNkcKf7STHzl69Cb/hCqPYffR
+					0KvEQruf8XvS1DFFGv6M7Xdnj/kQPEzy7pjI
+					kn75pRNm94sVekM0wGldVE3GhLyo8NJ8tyPt
+					FDeZHtVkYQUpUjx2CPedy2yBxCyHL/84Fjep
+					6M0RSteuWkmxUawxFsnTzA4xezSxgh0hs99x
+					t1V+QaMXmMYUL7xEEabB7vzogvMYajNuf5JA
+					VzxzFLRgZm2J39R/hg== )
+			300	A	193.191.177.252
+			300	RRSIG	A 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					hAa96MXs/HDlZwlBeXrraNzbFnxK2r7L4fLQ
+					sBzpeN35HEagSwkxhP36uvXy8UFi9NUhWlcx
+					aKstsgFy/2yIkqJQrXbTAB8nVH5LFZoUefVA
+					yKTMY+S4sVgiEIotb0xgjE9lEctLxG7Ka08G
+					yJntRHcvt6RAMRWDs/7QI4/ZtoAjeK1whh9l
+					2A+5yJIIcnjczAfZEELdDclMR4/dNlVTXv1m
+					XEC6VpvZPYFs4C4VIXn6JK3i35fIYFFGoZaC
+					ZjVioSGZAaI2yP5VNvUulzok13/cbjBjorpG
+					/i9IayktYwqgwEreHp1Z/x32FnkJBQpH6o//
+					TYdQvl1V0MZvH5PaBA== )
+			300	AAAA	2001:6a8:2880:a077::fc
+			300	RRSIG	AAAA 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					CC8/c2uta4HGIRp65/mAxxVRbmEIbKuTiFUH
+					cFzaM/8hw9wecWeuJ/Yptm6w+NfIUKB5hfW7
+					3W5Wv03fxYTjvNALcA5BRBkIiajPuBaTqzLx
+					QVO6VMA3ev0tewQ5wsSNHeIDZ4H/Vs/3x6dA
+					UN8rGY77ASdVgv0EVa23fYhuopwr0NvMWrDq
+					+N796loB+h+IVJ3lbCoZYS9VHT8ecoowgkUW
+					hpNlPole6hYZwSywo9LSR4EgVSiSSdqL9waX
+					LdzVs1tIn64SKXg5Bdwty0Q3nJvaDXAsE+Mo
+					huCLwbTYHV03N1cqRk7byvLd3SI/FAg38dvT
+					ns+n+0ByETqj3bf6SA== )
+			300	DNSKEY	256 3 7 (
+					AwEAAbYxr5r2f+2kHeNoNlFJnQ56BWNJdrJy
+					njzYII03SYiMFhwIhWiQDmNsfAXsAZ9LaS2V
+					zAT6cFYbtFf296q6lr3nnm3UJN95+I02BoxF
+					O2vPaAD5Fg51kabvTlPeU5d5UcEr9INpR6rk
+					Z7VLmeJ/OxhPZUmjVeG6oB0cd+z0b2QdQRAF
+					G1WHjd+wpbndmSeqCL0WteD0eRCD4TH6micA
+					VqurSXCFqknHgRMZrMtlWE+zSp/PXwP4Pci6
+					1a4c2I6dxQUYHAzArOfA46wGFGW/p+5v6Q8/
+					ADfTrXE0qoD+A0QsgwCMEYJyY1qysG5GjAe6
+					gOKHCp7MD3bIhnTeVIWAcRE=
+					) ; ZSK; alg = NSEC3RSASHA1 ; key id = 61805
+			300	DNSKEY	257 3 7 (
+					AwEAAcpP0sxpFi1ImIjEUtUsRz1oDH6kVLJH
+					8gKBHAyX5EZnEw3h1glZF4GSnMc2X6LniByA
+					+BpRn5u/2i29vOzHvhGjwqPlXEVHgynakVoV
+					OgIayKv37TO/aM8BarNDXi+iNGMb5FQ/+WH8
+					YgvlOYXsVb/mmabOV9NEIcOo5PEmeK55xCaQ
+					EFZAKCHmepBmSNaFKet1aTmlLuVoAXvTZ/IG
+					EsKwaF85hGFenpxsKmv9siPvb1Se4FCx2jjh
+					I1colLvZwGgd7xL56OV/OxYM2qjKrvng5RnQ
+					YSUproV9JV+T/657Xvqc0ujy4ZIjEh9w2Heg
+					7eSXg+mFDHBp4s4/Ctfsb58hx1leTRVYMvUv
+					5d2RBC386dzPJ71U+bzh6mBMYW6o4smMO/Yw
+					Ya8grhFJsWAgBYPXThS2g23VQMFzM5scFi5D
+					Dsl2vEmg38ja4Vom5L22QGU88pd3T892MW/g
+					u1UMWpsDlQxImH6eI/8GJrHR63uyM//D3cgl
+					8MpclYKioKo59PC04AQF7wvbePLyBRdvt+AD
+					0b4/lyp7xoCPJ1Zq6ToJLyoVGWc0Jxscg38g
+					DmuV8oueTV164XiWHVUGb50pRBWkfUa5R20S
+					jmId13Z8y5JkftbglyPS3WRROGThzxU3z9f3
+					qCnUHx5qZrzTJKIgdQhixXQKIHLEdFtfcMsW
+					dNk9
+					) ; KSK; alg = NSEC3RSASHA1 ; key id = 7219
+			300	RRSIG	DNSKEY 7 4 300 (
+					20201101123426 20201002123426 7219 tibo-declercq.sb.uclllabs.be.
+					RIOF/ytAoA8J4kN2oHBJAc5clV+i8tSgjhtb
+					Z1hKAtUpYcW6xH6AFwW1OmZPu4fZdkjuEYcu
+					OX6XrJrfsWOvGMLjdWBAG2vTy1CStyKkKIrc
+					6xF69fFnyYxSUyVLhOMOUMRyKkPsx67s7sXk
+					3+diN8THZ4MNg2NgSFzUxd7rD15qQIxt1/nd
+					88Bzv1rBVZIhrqgu/hsxhQU09g4sPO7iMjn7
+					ix3Ic51YMN3HeUR+Vs/yVPH2SMnDJePCF9BB
+					aDzR4eovtH3Mz3Jo3js1RaHnjf0e9HJkf2Lu
+					hhDBWop5vZD+jZ3xStDCxifts6KC/pStmzoe
+					RjRuOXd12sLPDbtZ72cUt/Xq/DOkNwfYFUYt
+					Y0dttCY2JX6kmGeuaON+TSrATMDvQ6cr6nM5
+					v6dqyT59J7vkDORIyplYTJ1F9CBraj1oiVCj
+					EK0Yg+OImm7k8ozpy5Z9erSRzZ4DqAyyLyn6
+					EpiQWG46jQ+wBBjRkV9HZd+q5GX31GY+qjQp
+					psr66NADwQPolPq+XVZVFqzrTHkEiDUWRcin
+					sdr/lbCmjy/nVawKISGooCoKNMHYBeVW4RbQ
+					fgHDR5Bam8jW0ITww5a2UEhGU9gO4myTsbP+
+					tgKY09qbKUIpZ1ShumHep/PQNrgGPHljMx64
+					Bp8moqDv+f0jTJ1tdbKZ0fH/m9oZHdq+XyU= )
+			300	RRSIG	DNSKEY 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					MVtTh8ApnN2DznoLZNEyBTfNBx8HsPWaaQmp
+					0nLNHpz8ACb3hBRI8Ufz4djgshdH1/H5N24H
+					S6ZpCVzpOATZbGFjtEjtPhZNGCWmVSf1V0F1
+					rtzzjkb2T+Di5kJz+yjRZx13gnn5kD0igxsd
+					4EXZQ8u+HHe8y7mZVqKPak7bvkHyD1/cSKXe
+					W/j/urTlfxAujgxSMoWZ/5CHpiUPNRKsrwQc
+					KKZxZrIVP/NoP0ovToneZVdDOg6YR1d2YkAX
+					1VAPaVvvtCWNpkCe0XQPff1TTxnsqtlS1Sr6
+					4uq2VeWw78Nz59gJyadpnHYE/VvKo0Wz2J3/
+					nNQOoY7SnDTzniWkOQ== )
+			0	NSEC3PARAM 1 0 10 D4692F86AA98974F
+			0	RRSIG	NSEC3PARAM 7 4 0 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					WxJw3RwHre2bIqnvJNt6e/Qx5wzo1M2R7l34
+					GR2O/vjjdq3ys7/if9FHbPyLx3T5a5k+M32k
+					lc+3YTgqxsh4SV6F6gVK7Xl5svpfEUmT/yG6
+					RYeeNVObP/zEKga9xUvC+iTpSqgT/E7diJgb
+					fFjJXGmnUp6PItk8w3RMSD0Ss9EdmXKO9ZDL
+					3x0KVxqkwORs4IOYk2ACmkLOd6xYanZtNQev
+					0pw+cj1w2ambCWlz0aSH8Q/JDc11Fjz7/5pA
+					0XHfit7CCwIutcod7DpLDQFu71Y4SBeBKQsB
+					Mp4dYb0466RhUnKjqgv0nEwvDYTdEq/6VhyI
+					JadhXiNksnoUZl2VWQ== )
+			300	CAA	0 iodef "mailto:tibo.declercq@student.ucll.be"
+			300	CAA	0 issue "letsencrypt.org"
+			300	RRSIG	CAA 7 4 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					AU3cRDoNb2if3CXU9Svy3rRYafXBHiiTpg7o
+					s+CgYfhKbqqtxO4fQCm3GFQTTv9bjgA4mDE6
+					1lOkpqxR6bBxUz7Ngi0+1P0VUzeL/dwsqKIs
+					FVKo+wM8uRVlizmWG3yK26hEzJRv5Vc4uPuo
+					l62cHdLmjzNo8hUF3+1iEiqBRI27fnhiEmDU
+					eufJcDiZuNoWujbAcpBxiN+uRjA4FmwBsC0F
+					laKj8E/GM0XMr11yoqVMCw0YY3BJ8p8WbbqK
+					X4OkhyIxuEDte8svzw+h9FJmGX/rbujVmehD
+					lknahhU2Tr66zMz3MCU/jtKBPvBIvX28Ssnw
+					Gea5g7hZEONDfXdaVg== )
+mx.tibo-declercq.sb.uclllabs.be. 300 IN	AAAA 2001:6a8:2880:a077::fc
+			300	RRSIG	AAAA 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					cyeJcXa7Zd36IvWwRnQlT10YGeJtkmPOtmJh
+					aZXjjc4nsAPHsflmFEdTbaPhjDFp2p9I5wnA
+					Wg1oOS3LT7jrSjq9neJdyqW7qgzX3/WYIAER
+					uc5m90mIw4Y1jxtnC9KaM1tJNnTX/0jJNRfs
+					vs/EXQfRlRr2rF0Qr+Xj9XDB5Hi6UrehOBzl
+					KTUUM9fprJOu1EHTiXOwgk22mpY7lFdiiihH
+					izdXc4KRZPO7kf9aPLfpdx2SSQXj6byqESQr
+					5PROofd6ZOE1fzfQQfQgafE7KT+zT+P5+lSM
+					fTkW65KuWdiMJDmoMu9V7zogM4bz1P05dV0W
+					xH2rLz72phtL8uKs4g== )
+ns.tibo-declercq.sb.uclllabs.be. 300 IN	A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					LILXCLtzEoBP5bf6X97ZY1gM7InIND9m8jpo
+					ToqYk7HgAblUoh/yzA5RefddUrx5o+efw7yy
+					5YZDI4ZaaWV74U7HGh/WLQJiGRhZ2tDMOjja
+					wrJ2vy2k30hPPLrNlx8X08jdZvl6SV1BKw0z
+					RHexqD/UA8xOMOidvL9c33lt+w4yTB6t4Qrg
+					CrlnldZeWNuB8w1uIUtPE1m3SnDNX1IYPTDC
+					sSGAR5Ih0Nx3yiCr5ST5IaTDfD32aF9Ximyy
+					pAA+O6AgWx+kU4zDOK9XEubXhupBWEq9DQlo
+					oZWia36a47ATbEOPjI0Ux97BDIcZtYYH+cgo
+					9HzC8ubXB664BMl94Q== )
+			300	AAAA	2001:6a8:2880:a077::fc
+			300	RRSIG	AAAA 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					FHD8inhUHDkjYzyBNnGXuTXNdhrm9Z9lWOfp
+					PqxIY0e6ja+c2BUh3Og56KoL5vdTc13RADga
+					0sOlBdpAXeJJAoAUxM3xFzhLbRi6/dvhIQxd
+					FYm5p2AT6sk26KkOGJpQqXtetJgJDWlmgaoZ
+					R7JlPA89ZbeM8uueSceoITRV0gD1R6hmk7WW
+					SLzGn/z0U9veAxADKH4XXcPtYOUplmEKIahP
+					9OKdYpGR0xH0hjYhLDxhv0+GIpBdGSv+LCLm
+					QMAcDUn0uOL/7ORWYS+SPIqe3R2G0BDgFexN
+					qdeHpttBuyLrSMqGdzRr9UXF1bZV5ujGju8b
+					EiqsIKxQCq/trwQWUw== )
+secure.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					AAswtWPNP7OJYVpUusUqkogBLLcqa+e3lkmD
+					9tM4tcsHe8fKFzF+id/44VEoppyKmq/JJLsl
+					2eTrnGPY7Yf3/6ZiQlTPCTXaYekGDZMsh9Ta
+					aDP69tvRI9HuBQIUg59h7KuvpT5rzZRasObt
+					5gxoQWjS1yRaPrJ0h9cSRmPXeO4+I3HuQMaE
+					Ilup4Rw6g/V3ewiszTTYbXMYA3vM+8kJMTyU
+					GUTpnfeIezC7NGRY355OaPjXmIlt7RP0DfEr
+					HjSyfQBcRr7KoVBwkk0hlkb1ZnwC9CvgX2gj
+					NxqpEttjl+1S8v6OZu+w4ZsyC4Jjz6vIq/bh
+					OYely7eMrDQNnrc7GA== )
+supersecure.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					S/HkZes6utOx0kUr6QC4tTjC+VUPdcqlamja
+					dpG2+H+9M4CnbfuFN59QppQgLe5CxrZyogQM
+					8HrMBo4FuqzjpH4mydODm4ZPO61H9eevxPo/
+					TGiYEr9BZwNxtUr6NcfM06Bj0x80XDgvM6vv
+					efx14j9C8BkfruBZGu1pb/oBJcBnLEypbGri
+					6BYnk5+9OPV5iUjaR66hmyvDNr9WWGs49wz5
+					wl4kOwRh6d6j/lf4xqK3nDoTG6PimLkVEiX7
+					I/95RctGUQmqOxY36zPcfdHimLf9KI/RPYm8
+					m27cBQu0sM413uW2nnUORni9afZGiVmE5R5v
+					PmHthfgl4rjnc6rgng== )
+test.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.254
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					hnjrS9Kf8E6agc3cod2/IsT6waXv3lKmAms+
+					4ghG6mdNM3NOrbSGxQUQIt/AHbyNzDoF+VlB
+					jaCddpsiUUbJFLr2tRin6eYtz2oor7ekgUjG
+					tpcCM757rY5X9iRJhnvD8cRTXvO8cfPYvgi+
+					tlgmXo5h1huzxiObccBf/V6kL2rc+uJYWk9j
+					yfSKkCthtToi7ZMh+0o7HkBDXByhgcrYfguU
+					lVDdJIkvYg0gJwt0k2Eh6u10Gdx6NXBv1lJr
+					dglNvN/egsULVrHWFFzcxP11tEuhBOr0eLes
+					caUf/MrwGPtIcDnY/HSZCTcsZJuHLGiEunzO
+					Npb9/2RfoPt5DVoU4w== )
+www.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					QbrFH4yWBwt0tpRZbULCS1l3U9qZwwT7ejF+
+					EpVQWPfKi+GqfzptlqEe0EdI+lOgDLN1Ro/H
+					i1JG5yS3expYWdT89So0EeVfJXLX3pqqVe6N
+					8oGeCB52C8HMHgOqXyQX3e1xXwNIRqyrY+8f
+					Qmb94Zn0+AhpsBEXwuEacQXD7kMqxmR9lQh5
+					6UjovrY3xcfgSBfWTd3857bjUuRAwAyk5Q9P
+					cXabdNvJTD0Fb4H3ZqiVB9iUJMRw9cBbg3Df
+					0KyC6geuUTwytAazX/UD3dTtMGisXF/fqMCx
+					u568SuzQ3jQMSy7iu1R/0EWMOUiq2x/kiQsQ
+					Pf7nhxuEONG8zbnYQQ== )
+			300	AAAA	2001:6a8:2880:a077::fc
+			300	RRSIG	AAAA 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					TUzVacyRXSE6vW5Xe2EEtZ7MhKZrZq/2pnna
+					v4ELElntD4yN6OhKX5ciu5gRM2QCjuCapjgJ
+					euTNOnsFn5ekLzBYCqn3i9ufQ4rZmgWK0wza
+					882TUzRuEpwGBnioTFDXuXMkhwBei9dHyjrL
+					mkWKjB0y53zYfvLhPETBjeQIxo02GcDXwhyr
+					4l0BWn2Szfx75I3ndzuedHPUGfdgxJ0Xun9H
+					+lElwdUvQ9jrtqubg7oprFWIKbS7WBIYEbZo
+					Ucb66rpdjjP2pT4S42eWd6mGP0EC/Zf3yhNl
+					deBLxXdqEPuRbWCY9dAVOcQCXFzqSDo4B7Kc
+					fjwRnmKHk9ayGUTWAA== )
+www1.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					FEsIgKC59jp6utO3dQuf1Yw+2eAo0k1Blx/O
+					dh3dVOe0RK/8txPH6/w7Z+MI9YuBJSGe8/Bd
+					8JBBSkwaUAHPZrWgy1USPqE0YF2+CNR7MVqf
+					dtWGy0IxowECfD8Z/6EviX5kRH8SaMZ8siPG
+					rSYZv9dPFvS2sNDrXoL2goFhYQvm3yrLGx4Y
+					35/XZiW2gFWyw36ehqhU3GcdD+pa71I6PRK4
+					h7082y7kAyrg5mFR2s+NVX8B5R6rYzrLdRXa
+					3pbIB+HVntGMUGdISS6KGgfNU4hXHHcJCqyL
+					TL//NgSaR3SOHThMDx/SnuL09HCGKKYceIK3
+					ST+54tCOj4h2G1/yng== )
+www2.tibo-declercq.sb.uclllabs.be. 300 IN A 193.191.177.252
+			300	RRSIG	A 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					LiJTAWs/HkRDMBWeUiUiMx1yhpsfnD1puyFD
+					PzMV2FtAoYPAFmcCvRSMi03TINBd6rSZLPVx
+					97uBWdullZpkL/ztB3RpAWqb4plZ6CM2MR6b
+					aLgv5oFj/8b1xeKoQYNcM68pP4PcfvYPKldj
+					Lu0NAvD8Sisfx/HclFAjOCghSpzWXhWQqPHm
+					0QvhgZtx/BDG+Tnjf1GWPf8EJRAioPlcyOTt
+					4pLonLuTPEeuEWFeennixJU2isO2HU35SBA+
+					FLEOytSqr48MdmW392w6AOqas1ahlCa4aGK+
+					LUCsFjOwQwTe69yU7wXfM3JK2p56eRRaS54/
+					hchXR9UNZK+D6vfU8Q== )
+5GC0BG43E9N34NI80H66PDOH7T9FH44A.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					5N58EB91MC3H5L6J3I68GQHLRBO3K319
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					D+Ua2JjAqEEzTSWifdk4DwBC3Hp9n56NrufQ
+					+okDdGtf8JLB+I87dcPkWorrG0QKM1igXLa9
+					kONrlWNBzI9g+G4hIJjFyXBskCkbqOofd81z
+					ZudI6ulgcSBUmDtx2wGbXzI0CwxIMw7HnyN3
+					M42Ed4Q/f2+eTRXg7cM87mSRJTp+9pKmFr+W
+					cNYDWa8REZC/ofNS0hqMi4B24VR752W8O2Z8
+					y1qAX6g5FaSw30ps+5L7en+wsjiKGyVtTils
+					fqqxKahj5nLFqWrKnXcPbVAnHBP7Wh/VmiRU
+					Yh3JXOdDC7BY4gRzkrQZ9V1UDMSbmrq/JlwZ
+					lZ4Ijw1g3uHzweeyBw== )
+5N58EB91MC3H5L6J3I68GQHLRBO3K319.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					D1IF86ID3S4CM2B052QQ25DR3TGO9NTT
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					YDDfsrOamMisunyNfM3piEquLy9KghuoZA5Q
+					+fqK74VmJ774V1U7xpbV+LbGM2nMi/ueugSz
+					JZcRmXalJ2W75lY69VHQpgLgC0+e+jm30Lo3
+					/rezJC+JXCyrAWP4amgdH8TdCBaywssqO79X
+					K/ZC5dqcJWoJmjRWBMoLurJ7OSnqN6mxTmLZ
+					BTGCsTAU3hmz+6RXcFq++xfW9+hP2Jkgq7cl
+					8j/+SnH2JNQXKLwH0VySJz86GSEnhsDhExr7
+					W5QYpBvx2Y4U+4JhF3ruxI1MJ476P4gfxUZy
+					SRgHmvI7fPUMSLp/j6hKFmyv/rgEjFN0UOtq
+					QSGRZPLMEXV6Sanz0A== )
+D1IF86ID3S4CM2B052QQ25DR3TGO9NTT.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					DVC9DSSI5UJLKKCKQKF8O1H965OO0R9G
+					A NS SOA AAAA RRSIG DNSKEY NSEC3PARAM
+					CAA )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					pWa+BVx2r8HTlmLRwrCz7QOanAxH06HP5G9D
+					ESOZ+kRx79hvQvhmscsSQT3Upp/XMlGCEjJq
+					y5SwE/jGCptCYtohBP67AVEEfOF/4/Q8c0Nx
+					OkyIuO7gGdL2XfACokZkzsVzgl71R1B6jntL
+					6t9sFtr3VJZwb7CzVkjbP5G/i/Ou3uveuoBT
+					VZW5FFNSMxnficgMzaQjg+W/bBpy+FDgdI07
+					GtpzkZv7iOK0nlCKEp0l3tQR+x0pks3CN97s
+					yeZFrOh9C4gSp/yCBILlLGKPokC9kD5J9MVb
+					xj+U0M2TWNZ7jBDp9eIVou+dOiHgbSXgC0W3
+					/c1pht0srXxcZ/qJ+Q== )
+DVC9DSSI5UJLKKCKQKF8O1H965OO0R9G.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					DVHN766T80NUALK1MMDN6UFK0T1RPP2P
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					B6u2GJ1wH7dAcWKEy4r4fUvJjG+HP/rr8bGU
+					Fc4YnhnEce03lt9nl5e8Dz/5fY2G7N42lj1O
+					cc4QVzE/b5lemaM/8fGQ0P3X/Uf74492WCwo
+					nw4zS1ucrrhU7dO1kS6XBS8rvE+d3alHtITq
+					fPnc2JQX24b6Tg1ClhUIXk7nW4lR9AmSS1qA
+					9QGwvGua9kaK6kzHhFx6xrcP8zPDxGKzCZxp
+					g9VaW8rKfb74S97yAu/4Qc2a91Y9h6coeYX+
+					b44A2h63u0ORJQ09hWajYmEGvZSHYRIQqcIn
+					X3kGOOUmmh1FngmO0A0iGA6p9/LvuA1O9z8X
+					o2i843grIGkedEkPUA== )
+DVHN766T80NUALK1MMDN6UFK0T1RPP2P.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					FOALRAF24CKA62C4DEU20A8G734TIVBO
+					A AAAA RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					nrk9ElGiEBFJbN/9NyxgMULt8JiyvRfVw1/R
+					2AaIXkP1uBoSYDFHjL5jyHdLZ93wFwr8nEGv
+					0F62ZzVxBBrkbjXlcyUH6KlgO+jLHf97rOBY
+					Pd54OPmWM6vlmeoZT0ZbByV8LBEOxLTIeabM
+					LhX4Qo4eG2Nsqw539Ia1s/Zf6Q+lmPrhuYyP
+					9zZyTCg/xjVh97H3eWh7tfzoHN75UohCeJN5
+					fHJSv/BgSWdp2kR0DUcfOLeZl/ygiprKthJG
+					B+YpxR74pCiToKo5EJSzQFc9s7Q9j9/yCA9S
+					CTMvPmq8U0EeBXMdkulHQ2VktErPOg1RmKOs
+					Mrg4lQddhaZtnceBfA== )
+FOALRAF24CKA62C4DEU20A8G734TIVBO.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					GHLSQT8B31FH6TGN6KBACU6LGRK0PO26
+					AAAA RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					tSB7f+40byeTGHsHCezfpkYpUXnb6DY518/Z
+					MBiakYzLrS8VvlhVxneUtNXFCTeWBq1lusSv
+					0E3WTPxzkdj+3SFM7vQ+KNrr8OCJ9KIo5YTr
+					euhLkKbagvcAO60U7c2UAOCeK6isAe9trfNO
+					fpA7lO/2xh4Q4TI7Gay2Wp6QcJstogkwMWnW
+					5H4dcObBkg//V68wQ1dqHXbnVl6DGTNLf1vw
+					sXh9fH687VYyuJCi4IkWBh5P1uQXFGuPDdRD
+					HVQJ0CZfHdUYL5xjnQikQ0yezHtEqDCkpnCl
+					Trj06D7i78VHtPwzIDTUgZorIWVlR4NT5FUm
+					O5BECmrAjKZWxQSEDA== )
+GHLSQT8B31FH6TGN6KBACU6LGRK0PO26.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					TE9J8ABTPGQ4I7BVV9LB6BGK7VJS80HJ
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					GIuxj9AXyvnFioua6qsIt0Jc403xR0xsEO6h
+					BnI+cdAq+YB5mJ93ZetU0tcwHwGp/8Z4/VcB
+					9nb4u/rBXyTRFq+QMXOHIlGAwVwxAZaRn26o
+					o94Tat+MMLor+FebEL7Wuh4QtWOy3NCKodyJ
+					2/xcEH0h8OS/tT7wB0r4rHeQvGBjsbPLniqr
+					5AGzqO699nb+64lmf23yy6OJextehHEGmtyB
+					st2Oivnx05dDy+GbFOYY2zXTXHqVnGCYpP0B
+					l+0gw8QzPB6xc2PozKaPXmFwhq1uiv1Qln4a
+					GRJqkIuwd7goaOobPMEa8916zpFBbrI5IULm
+					PqHX+uvmzNE9l7voGg== )
+TE9J8ABTPGQ4I7BVV9LB6BGK7VJS80HJ.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					UFHSAG9NM98EU6DSUMA698J2GFB2KJ92
+					A RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					f1IfyAluU0blKvNSg3ZKBEIAB62pXO4F229p
+					GGYWTwo3kxSq/IMVCjBshpe+FE7TP43R42+K
+					mpFhsqceMZUOSunhwEIE2oAb0seW1kytkO/k
+					SqHGWZU4svgryaHBqAD+2+njHSC8W/sGit7o
+					yI/EBW1hYIXVHEsnBVPKsru9duohG/B/JSZf
+					PlG9hbcEf4wunWcZhTpsD/LZo/ukkCKBrGCN
+					sxbXO5sBhJayDmtTQWYXSqa8awmcEx+bOx5k
+					+KEdpE1VRCobQkbzC44f3Cdsmq5VLQWHdmB0
+					uB1XWy1h8ccdHSKJTxlqu9Ydxk8j1BWPPFr+
+					AEXHFkbKyUE7GVLRvA== )
+UFHSAG9NM98EU6DSUMA698J2GFB2KJ92.tibo-declercq.sb.uclllabs.be. 300 IN NSEC3 1 1 10 D4692F86AA98974F (
+					5GC0BG43E9N34NI80H66PDOH7T9FH44A
+					A AAAA RRSIG )
+			300	RRSIG	NSEC3 7 5 300 (
+					20201101123426 20201002123426 61805 tibo-declercq.sb.uclllabs.be.
+					nwELPeQx3kySf+3gevcauQ0+wk5AzS5b3cnk
+					JYkYbS22uSXDbVs0QLPPO+QiBMGQ9wT2V37h
+					tPqaV8byfMeeKdOtbcf7VI87JSJw3t0w4kIi
+					qRsgkoP5f2f5NLwY3nils8dCFA/QZc8n0zU1
+					gbghQNEXny6m5YouSyEQ2CvtlSGMEROHDnsa
+					eP5fNugVJ31cQQY9D2DzdVr3f48BLbkcBKg0
+					aQzTv3N5j1Ys2ANrDiOXy3yRfZPjXHME4DWx
+					NCR1PGukb1KNFmzu/aYkExZvIf3IFEdmRV9/
+					9IdEcWuFKvCVuVU11yl5n1GRf+r6GgQG0XJt
+					dBNNpgzhE9leL5oyrQ== )
