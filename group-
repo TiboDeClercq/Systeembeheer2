@@ -1,4 +1,4 @@
-root:x:0:
+root:x:0:check
 daemon:x:1:
 bin:x:2:
 sys:x:3:
@@ -18,7 +18,7 @@ voice:x:22:
 cdrom:x:24:
 floppy:x:25:
 tape:x:26:
-sudo:x:27:check
+sudo:x:27:
 audio:x:29:
 dip:x:30:
 www-data:x:33:
@@ -56,4 +56,5 @@ tcpdump:x:116:
 systemd-coredump:x:999:
 bind:x:117:
 ntp:x:118:
+mysql:x:119:
 check:x:1000:
