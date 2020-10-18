@@ -18,7 +18,7 @@ voice:*::
 cdrom:*::
 floppy:*::
 tape:*::
-sudo:*::
+sudo:*::check
 audio:*::
 dip:*::
 www-data:*::
@@ -28,7 +28,7 @@ list:*::
 irc:*::
 src:*::
 gnats:*::
-shadow:*::
+shadow:*::freerad
 utmp:*::
 video:*::
 sasl:*::
@@ -58,3 +58,5 @@ bind:!::
 ntp:!::
 mysql:!::
 check:!::
+mlocate:!::
+freerad:!::
