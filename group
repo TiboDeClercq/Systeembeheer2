@@ -60,3 +60,4 @@ mysql:x:119:
 check:x:1000:
 mlocate:x:120:
 freerad:x:121:
+arpwatch:x:122:
