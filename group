@@ -64,3 +64,4 @@ arpwatch:x:122:
 haproxy:x:123:
 elasticsearch:x:124:
 kibana:x:125:
+logstash:x:998:

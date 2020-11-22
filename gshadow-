@@ -63,3 +63,4 @@ freerad:!::
 arpwatch:!::
 haproxy:!::
 elasticsearch:!::
+kibana:!::
