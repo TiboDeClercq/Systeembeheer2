@@ -60,3 +60,6 @@ mysql:!::
 check:!::
 mlocate:!::
 freerad:!::
+arpwatch:!::
+haproxy:!::
+elasticsearch:!::

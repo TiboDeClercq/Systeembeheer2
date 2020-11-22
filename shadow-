@@ -33,3 +33,6 @@ mysql:!:18540:0:99999:7:::
 check:$6$.z0n8zcXgdmsxfqh$q9CbBswGH4mlWkXVQyaM51O.I9XUlvjV/MhApU/tMgdkaBF5x7Rnho5lDonwQ.lX3hQnbdNEo6PMRMw9vXZKy1:18540:0:99999:7:::
 freerad:*:18543:0:99999:7:::
 arpwatch:!:18553:0:99999:7:::
+haproxy:!:18581:0:99999:7:::
+elasticsearch:*:18588:0:99999:7:::
+kibana:*:18588:0:99999:7:::

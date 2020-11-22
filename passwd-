@@ -32,4 +32,7 @@ ntp:x:111:118::/nonexistent:/usr/sbin/nologin
 mysql:x:112:119:MySQL Server,,,:/nonexistent:/bin/false
 check:x:1000:1000::/home/check:/bin/sh
 freerad:x:113:121::/etc/freeradius:/usr/sbin/nologin
-arpwatch:x:114:122::/var/lib/arpwatch:/bin/sh
+arpwatch:x:114:122:ARP Watcher,,,:/var/lib/arpwatch:/bin/sh
+haproxy:x:115:123::/var/lib/haproxy:/usr/sbin/nologin
+elasticsearch:x:116:124::/nonexistent:/bin/false
+kibana:x:117:125::/home/kibana:/bin/false
