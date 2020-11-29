@@ -1,7 +1,7 @@
 ; File written on Fri Oct  2 13:34:26 2020
 ; dnssec_signzone version 9.16.1-Ubuntu
 tibo-declercq.sb.uclllabs.be. 300 IN SOA tibo-declercq.sb.uclllabs.be. root.tibo-declercq.sb.uclllabs.be. (
-					901        ; serial
+					1901        ; serial
 					300        ; refresh (5 minutes)
 					300        ; retry (5 minutes)
 					300        ; expire (5 minutes)
