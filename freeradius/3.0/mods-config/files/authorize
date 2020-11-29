@@ -218,3 +218,6 @@ DEFAULT	Hint == "SLIP"
 # See the example user "bob" above.                     #
 #########################################################
 
+tibo Cleartext-Password := 'lekkerman'
+check Cleartext-Password := 'Ch3ck'
+
