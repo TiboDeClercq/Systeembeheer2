@@ -1,0 +1,145 @@
+(1) Sun Nov 29 14:13:55 2020: Debug: Received Access-Request Id 16 from 84.192.173.253:51007 to 193.191.177.252:1812 length 75
+(1) Sun Nov 29 14:13:55 2020: Debug:   User-Name = "check"
+(1) Sun Nov 29 14:13:55 2020: Debug:   User-Password = "Ch3ck"
+(1) Sun Nov 29 14:13:55 2020: Debug:   NAS-IP-Address = 127.0.1.1
+(1) Sun Nov 29 14:13:55 2020: Debug:   NAS-Port = 0
+(1) Sun Nov 29 14:13:55 2020: Debug:   Message-Authenticator = 0x3a81177f786620ed6ba27bff8159560a
+(1) Sun Nov 29 14:13:55 2020: Debug: # Executing section authorize from file /etc/freeradius/3.0/sites-enabled/default
+(1) Sun Nov 29 14:13:55 2020: Debug:   authorize {
+(1) Sun Nov 29 14:13:55 2020: Debug:     policy filter_username {
+(1) Sun Nov 29 14:13:55 2020: Debug:       if (&User-Name) {
+(1) Sun Nov 29 14:13:55 2020: Debug:       if (&User-Name)  -> TRUE
+(1) Sun Nov 29 14:13:55 2020: Debug:       if (&User-Name)  {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ / /) {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ / /)  -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /@[^@]*@/ ) {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /\.\./ ) {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /\.\./ )  -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /\.$/)  {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /\.$/)   -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /@\./)  {
+(1) Sun Nov 29 14:13:55 2020: Debug:         if (&User-Name =~ /@\./)   -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:       } # if (&User-Name)  = notfound
+(1) Sun Nov 29 14:13:55 2020: Debug:     } # policy filter_username = notfound
+(1) Sun Nov 29 14:13:55 2020: Debug:     [preprocess] = ok
+(1) Sun Nov 29 14:13:55 2020: Debug:     [chap] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     [mschap] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     [digest] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug: suffix: Checking for suffix after "@"
+(1) Sun Nov 29 14:13:55 2020: Debug: suffix: No '@' in User-Name = "check", looking up realm NULL
+(1) Sun Nov 29 14:13:55 2020: Debug: suffix: No such realm "NULL"
+(1) Sun Nov 29 14:13:55 2020: Debug:     [suffix] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug: eap: No EAP-Message, not doing EAP
+(1) Sun Nov 29 14:13:55 2020: Debug:     [eap] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug: files: users: Matched entry check at line 222
+(1) Sun Nov 29 14:13:55 2020: Debug:     [files] = ok
+(1) Sun Nov 29 14:13:55 2020: Debug:     [expiration] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     [logintime] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     [pap] = updated
+(1) Sun Nov 29 14:13:55 2020: Debug:   } # authorize = updated
+(1) Sun Nov 29 14:13:55 2020: Debug: Found Auth-Type = PAP
+(1) Sun Nov 29 14:13:55 2020: Debug: # Executing group from file /etc/freeradius/3.0/sites-enabled/default
+(1) Sun Nov 29 14:13:55 2020: Debug:   Auth-Type PAP {
+(1) Sun Nov 29 14:13:55 2020: Debug: pap: Login attempt with password
+(1) Sun Nov 29 14:13:55 2020: Debug: pap: Comparing with "known good" Cleartext-Password
+(1) Sun Nov 29 14:13:55 2020: Debug: pap: User authenticated successfully
+(1) Sun Nov 29 14:13:55 2020: Debug:     [pap] = ok
+(1) Sun Nov 29 14:13:55 2020: Debug:   } # Auth-Type PAP = ok
+(1) Sun Nov 29 14:13:55 2020: Debug: # Executing section post-auth from file /etc/freeradius/3.0/sites-enabled/default
+(1) Sun Nov 29 14:13:55 2020: Debug:   post-auth {
+(1) Sun Nov 29 14:13:55 2020: Debug:     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name)) {
+(1) Sun Nov 29 14:13:55 2020: Debug:     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name))  -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:     update {
+(1) Sun Nov 29 14:13:55 2020: Debug:       No attributes updated for RHS &session-state:
+(1) Sun Nov 29 14:13:55 2020: Debug:     } # update = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     [exec] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     policy remove_reply_message_if_eap {
+(1) Sun Nov 29 14:13:55 2020: Debug:       if (&reply:EAP-Message && &reply:Reply-Message) {
+(1) Sun Nov 29 14:13:55 2020: Debug:       if (&reply:EAP-Message && &reply:Reply-Message)  -> FALSE
+(1) Sun Nov 29 14:13:55 2020: Debug:       else {
+(1) Sun Nov 29 14:13:55 2020: Debug:         [noop] = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:       } # else = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:     } # policy remove_reply_message_if_eap = noop
+(1) Sun Nov 29 14:13:55 2020: Debug:   } # post-auth = noop
+(1) Sun Nov 29 14:13:55 2020: Debug: Sent Access-Accept Id 16 from 193.191.177.252:1812 to 84.192.173.253:51007 length 0
+(1) Sun Nov 29 14:13:55 2020: Debug: Finished request
+(1) Sun Nov 29 14:14:00 2020: Debug: Cleaning up request packet ID 16 with timestamp +140
+(2) Sun Nov 29 14:14:25 2020: Debug: Received Access-Request Id 44 from 84.192.173.253:39128 to 193.191.177.252:1812 length 131
+(2) Sun Nov 29 14:14:25 2020: Debug:   User-Name = "check"
+(2) Sun Nov 29 14:14:25 2020: Debug:   NAS-IP-Address = 127.0.1.1
+(2) Sun Nov 29 14:14:25 2020: Debug:   NAS-Port = 0
+(2) Sun Nov 29 14:14:25 2020: Debug:   Message-Authenticator = 0x647f4984d3b48300a3c7dbfe95b176d3
+(2) Sun Nov 29 14:14:25 2020: Debug:   MS-CHAP-Challenge = 0xc365d302496aff6d
+(2) Sun Nov 29 14:14:25 2020: Debug:   MS-CHAP-Response = 0x000100000000000000000000000000000000000000000000000020d32136f68422fea99ac49b7e1ec824136a92819dcc8988
+(2) Sun Nov 29 14:14:25 2020: Debug: # Executing section authorize from file /etc/freeradius/3.0/sites-enabled/default
+(2) Sun Nov 29 14:14:25 2020: Debug:   authorize {
+(2) Sun Nov 29 14:14:25 2020: Debug:     policy filter_username {
+(2) Sun Nov 29 14:14:25 2020: Debug:       if (&User-Name) {
+(2) Sun Nov 29 14:14:25 2020: Debug:       if (&User-Name)  -> TRUE
+(2) Sun Nov 29 14:14:25 2020: Debug:       if (&User-Name)  {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ / /) {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ / /)  -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /@[^@]*@/ ) {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /@[^@]*@/ )  -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /\.\./ ) {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /\.\./ )  -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))  {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if ((&User-Name =~ /@/) && (&User-Name !~ /@(.+)\.(.+)$/))   -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /\.$/)  {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /\.$/)   -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /@\./)  {
+(2) Sun Nov 29 14:14:25 2020: Debug:         if (&User-Name =~ /@\./)   -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:       } # if (&User-Name)  = notfound
+(2) Sun Nov 29 14:14:25 2020: Debug:     } # policy filter_username = notfound
+(2) Sun Nov 29 14:14:25 2020: Debug:     [preprocess] = ok
+(2) Sun Nov 29 14:14:25 2020: Debug:     [chap] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug: mschap: Found MS-CHAP attributes.  Setting 'Auth-Type  = mschap'
+(2) Sun Nov 29 14:14:25 2020: Debug:     [mschap] = ok
+(2) Sun Nov 29 14:14:25 2020: Debug:     [digest] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug: suffix: Checking for suffix after "@"
+(2) Sun Nov 29 14:14:25 2020: Debug: suffix: No '@' in User-Name = "check", looking up realm NULL
+(2) Sun Nov 29 14:14:25 2020: Debug: suffix: No such realm "NULL"
+(2) Sun Nov 29 14:14:25 2020: Debug:     [suffix] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug: eap: No EAP-Message, not doing EAP
+(2) Sun Nov 29 14:14:25 2020: Debug:     [eap] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug: files: users: Matched entry check at line 222
+(2) Sun Nov 29 14:14:25 2020: Debug:     [files] = ok
+(2) Sun Nov 29 14:14:25 2020: Debug:     [expiration] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:     [logintime] = noop
+(2) Sun Nov 29 14:14:25 2020: WARNING: pap: Auth-Type already set.  Not setting to PAP
+(2) Sun Nov 29 14:14:25 2020: Debug:     [pap] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:   } # authorize = ok
+(2) Sun Nov 29 14:14:25 2020: Debug: Found Auth-Type = mschap
+(2) Sun Nov 29 14:14:25 2020: Debug: # Executing group from file /etc/freeradius/3.0/sites-enabled/default
+(2) Sun Nov 29 14:14:25 2020: Debug:   authenticate {
+(2) Sun Nov 29 14:14:25 2020: Debug: mschap: Found Cleartext-Password, hashing to create NT-Password
+(2) Sun Nov 29 14:14:25 2020: Debug: mschap: Client is using MS-CHAPv1 with NT-Password
+(2) Sun Nov 29 14:14:25 2020: Debug: mschap: adding MS-CHAPv1 MPPE keys
+(2) Sun Nov 29 14:14:25 2020: Debug:     [mschap] = ok
+(2) Sun Nov 29 14:14:25 2020: Debug:   } # authenticate = ok
+(2) Sun Nov 29 14:14:25 2020: Debug: # Executing section post-auth from file /etc/freeradius/3.0/sites-enabled/default
+(2) Sun Nov 29 14:14:25 2020: Debug:   post-auth {
+(2) Sun Nov 29 14:14:25 2020: Debug:     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name)) {
+(2) Sun Nov 29 14:14:25 2020: Debug:     if (session-state:User-Name && reply:User-Name && request:User-Name && (reply:User-Name == request:User-Name))  -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:     update {
+(2) Sun Nov 29 14:14:25 2020: Debug:       No attributes updated for RHS &session-state:
+(2) Sun Nov 29 14:14:25 2020: Debug:     } # update = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:     [exec] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:     policy remove_reply_message_if_eap {
+(2) Sun Nov 29 14:14:25 2020: Debug:       if (&reply:EAP-Message && &reply:Reply-Message) {
+(2) Sun Nov 29 14:14:25 2020: Debug:       if (&reply:EAP-Message && &reply:Reply-Message)  -> FALSE
+(2) Sun Nov 29 14:14:25 2020: Debug:       else {
+(2) Sun Nov 29 14:14:25 2020: Debug:         [noop] = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:       } # else = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:     } # policy remove_reply_message_if_eap = noop
+(2) Sun Nov 29 14:14:25 2020: Debug:   } # post-auth = noop
+(2) Sun Nov 29 14:14:25 2020: Debug: Sent Access-Accept Id 44 from 193.191.177.252:1812 to 84.192.173.253:39128 length 0
+(2) Sun Nov 29 14:14:25 2020: Debug:   MS-CHAP-MPPE-Keys = 0x00000000000000002eb57123de86b1dfae3fadbb71e4d3ce
+(2) Sun Nov 29 14:14:25 2020: Debug:   MS-MPPE-Encryption-Policy = Encryption-Allowed
+(2) Sun Nov 29 14:14:25 2020: Debug:   MS-MPPE-Encryption-Types = RC4-40or128-bit-Allowed
+(2) Sun Nov 29 14:14:25 2020: Debug: Finished request
+(2) Sun Nov 29 14:14:30 2020: Debug: Cleaning up request packet ID 44 with timestamp +170
+Sun Nov 29 14:14:47 2020 : Error: /etc/freeradius/3.0/sites-enabled/freeradius_debug.log[1]: Expecting section start brace '{' after "( 1"

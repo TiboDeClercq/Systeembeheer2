@@ -220,4 +220,4 @@ DEFAULT	Hint == "SLIP"
 
 tibo Cleartext-Password := 'lekkerman'
 check Cleartext-Password := 'Ch3ck'
-
+pieter Cleartext-Password := 'lekkerman'
